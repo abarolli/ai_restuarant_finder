@@ -15,7 +15,7 @@ def get_configs(_file: str) -> ordereddict:
     return configs
 
 
-def to_restuarant_set(businesses: list) -> set[Business]:
+def to_business_set(businesses: list) -> set[Business]:
     """
     Consumes a list of businesses (dictionaries containing the necessary
     restuarant information) and returns a set of Businesses

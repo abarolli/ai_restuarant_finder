@@ -17,8 +17,8 @@ def find_buz_at(location: str, limit: int=None) -> set[Business]:
     res = requester.get(url)
 
     if limit:
-        buz_set = r_utils.to_restuarant_set(res.json()["businesses"][:limit])
+        buz_set = r_utils.to_business_set(res.json()["businesses"][:limit])
     else:
-        buz_set = r_utils.to_restuarant_set(res.json()["businesses"])
+        buz_set = r_utils.to_business_set(res.json()["businesses"])
 
     return buz_set
